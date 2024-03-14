@@ -27,7 +27,7 @@ fun main() {
         f++
     }
 
-    sumar2(m,sumaColum)
+    sumarColumnas(m,sumaColum)
     println("La suma de las filas es")
     println(Arrays.toString(sumaFilas))
     println("La suma de las columnas es")
@@ -40,7 +40,7 @@ fun main() {
 
 
 
-fun sumar2 (m:Array<Array<Int>>, sumaColumnas:Array<Int>){
+fun sumarColumnas (m:Array<Array<Int>>, sumaColumnas:Array<Int>){
     var f: Int = 0
     var c: Int = 0
 
