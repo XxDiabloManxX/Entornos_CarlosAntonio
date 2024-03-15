@@ -8,13 +8,8 @@ fun main() {
     var sumaFilas = Array(matriz.size){0}
     var sumaColumas = Array(matriz[0].size){0}
 
+    imprimirMatriz(matriz)
 
-    for (fila in matriz.indices){
-        for (columna in matriz[fila].indices){
-            print("${matriz[fila][columna]} ")
-        }
-        println()
-    }
     sumarArray(matriz, sumaFilas)
     sumarArray(matriz,sumaColumas)
 
@@ -22,6 +17,15 @@ fun main() {
     println(Arrays.toString(sumaFilas))
     println("La suma de las columnas es")
     println(Arrays.toString(sumaColumas))
+}
+
+fun imprimirMatriz(matriz : Array<Array<Int>>) {
+    for (fila in matriz.indices){
+        for (columna in matriz[fila].indices){
+            print("${matriz[fila][columna]} ")
+        }
+        println()
+    }
 }
 
 fun sumarArray (m:Array<Array<Int>>, sumaArray:Array<Int>){
